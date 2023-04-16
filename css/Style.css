@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+header{
+    background-image: linear-gradient(to left bottom, #fffe00, #f5b918, #d27d2f, #9c4e34, #5b2b2b, #542826, #4d2621, #46231d, #6d411b, #806b10, #769c21, #1ccf61);
+}
+main {
+    /* background-image: linear-gradient(to left bottom, #002dff, #6800b7, #6b0079, #570048, #380224, #380224, #380224, #380224, #570048, #6b0079, #6800b7, #002dff); */
+    background-image: url(../assets/Imagenes/E5.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+footer {
+    background-image: linear-gradient(to left bottom, #1919ae, #002495, #002678, #002359, #001d3a, #001d3a, #001d3a, #001d3a, #002359, #002678, #002495, #1919ae);
+    text-align: center;
+    
+}
+/*Index*/
+
+.header {
+    position: sticky;
+    background-color: #001d3a;
+    display: flex;
+    justify-content: center;
+    align-items: top
+    ;
+}
+
+
+.contenedorLogo{
+    width: 30%;
+    margin: 5% auto;
+    position: relative;
+    left: 0%;
+    
+}
+.logo {
+    width: 100%;
+    position: relative;
+    
+}
+.navegador {
+display: inline-block;    
+width: 100%;
+
+}
+
+.listaNavegacion {
+    list-style: none;
+    text-align: center;
+    height: 10vh;
+
+}
+.listaNavegacion li{
+    display: inline-block;
+    border-color: black;
+    filter: drop-shadow(10px 8px 8px  rgb(177, 23, 23))
+
+}
+
+.linkNav1{
+    margin: 1.5rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: rgb(61, 61, 61);
+    background-size: cover;
+    text-decoration: none;
+    font-weight: 700;
+    background-image: url(../assets/Imagenes/Logo\ colores\ maxink.jpeg) ;
+}
+.linkNav2 {  
+     margin: 1.5rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    background-size: cover;
+    text-decoration: none;
+    font-weight: 700;
+    background-image: url(../assets/Imagenes/Actualidad.jpg) ;}
+.linkNav3 { 
+       margin: 1.5rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color:  white;
+    background-size: cover;
+    text-decoration: none;
+    font-weight: 700;
+    background-image: url(../assets/Imagenes/) 
+    ;}
+.linkNav4 {  
+      margin: 1.5rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    background-size: cover;
+    text-decoration: none;
+    font-weight: 700;
+    background-image: url(../assets/Imagenes/Max-Ink.jpeg)
+    ;
+    filter: drop-shadow(10px 8px 8px  rgb(177, 23, 23))
+}
+.linkNav5 {   
+     margin: 1.5rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color:  white;
+    background-size: cover;
+    text-decoration: none;
+    font-weight: 700;
+    background-image: url(../assets/Imagenes/Cuidados\ 2.webp) ;}
+
+.unoIndex {
+    display: inline-block;
+}
+.tituloIndex {
+    font-size: 3rem;
+    text-align: center;
+    top: 30px;
+    color: white;
+}
+.descripcionIndex {
+    font-size: 1.5rem;
+    margin-top: 10%;
+    text-align: center;
+    width: 50%;
+    color: white;
+    display: inline-block;
+    margin-right: 10%;
+    margin-left: 7%;
+    margin-bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.226);
+}
+.tatuajeDeMessi { width: 25%;
+    display: inline-block;
+    margin-top: 10%;
+    }
+
+
+.subtituloIndex {
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    color: white;
+    
+}
+.tatuajesFutbol {
+    width: 13%;
+    display: inline-block;
+    margin-left: 5%;
+}
+.queEsElTatuajeIndex {
+    color: white;
+    text-align: center;
+   margin: 0 auto;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.226);
+    margin-left: 6%;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.tatuajeEnLaPierna{ width: 15%;
+    display: inline-block;
+    margin-left: 5%;
+
+}
+
+/* Galeria */
+/* Contacto */
+
+/* Sobre Max-Ink */
+/* Cuidados */
+/* Footer */
+.iconoInstagram{
+    color: rgb(224, 11, 136);
+    text-decoration: none;
+} 
+.iconoYoutube {
+    color: red;
+    text-decoration: none;
+
+}
+.iconoTiktok { color: black;
+    text-decoration: none;
+
+}
+.iconoMail { color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+.iconoWhatsapp {color: green;
+    text-decoration: none;
+
+}
+.iconoFacebook {
+    color: blue;
+    text-decoration: none;
+}
+.iconoLinkedin {
+    color: rgb(11, 77, 99);
+    text-decoration: none;
+}
