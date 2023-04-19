@@ -4,180 +4,256 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    
 }
 header{
-    background-image: linear-gradient(to left bottom, #fffe00, #f5b918, #d27d2f, #9c4e34, #5b2b2b, #542826, #4d2621, #46231d, #6d411b, #806b10, #769c21, #1ccf61);
+    background-color: #141516;
 }
 main {
     /* background-image: linear-gradient(to left bottom, #002dff, #6800b7, #6b0079, #570048, #380224, #380224, #380224, #380224, #570048, #6b0079, #6800b7, #002dff); */
-    background-image: url(../assets/Imagenes/E5.jpeg);
+    background-image: radial-gradient(circle, #141516, #27292b, #3c3f42, #53565a, #6a6e74, #6a6e74, #6a6e74, #6a6e74, #53565a, #3c3f42, #27292b, #141516);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-footer {
-    background-image: linear-gradient(to left bottom, #1919ae, #002495, #002678, #002359, #001d3a, #001d3a, #001d3a, #001d3a, #002359, #002678, #002495, #1919ae);
-    text-align: center;
-    
-}
-/*Index*/
-
-.header {
-    position: sticky;
-    background-color: #001d3a;
-    display: flex;
-    justify-content: center;
-    align-items: top
-    ;
-}
-
-
-.contenedorLogo{
-    width: 30%;
-    margin: 5% auto;
-    position: relative;
-    left: 0%;
-    
+/* Herramientas */
+.colorFondo {
+ background-color: #1ccf61;
 }
 .logo {
-    width: 100%;
-    position: relative;
-    
+    width: 100px !important;
+    height: auto;
+    background-color: grey;
+   }
+/* Header */
+header.Header {
+    background-color: #6a6e74 !important;
 }
-.navegador {
-display: inline-block;    
-width: 100%;
-
+.Header__Nav__Div__Button__Div{
+    display: flex;
 }
-
-.listaNavegacion {
-    list-style: none;
-    text-align: center;
-    height: 10vh;
-
-}
-.listaNavegacion li{
-    display: inline-block;
-    border-color: black;
-    filter: drop-shadow(10px 8px 8px  rgb(177, 23, 23))
-
-}
-
-.linkNav1{
-    margin: 1.5rem;
-    padding: 2rem;
+.Header__Nav__Div__Button__Div__Ul {
     font-size: 1.5rem;
-    color: rgb(61, 61, 61);
-    background-size: cover;
-    text-decoration: none;
-    font-weight: 700;
-    background-image: url(../assets/Imagenes/Logo\ colores\ maxink.jpeg) ;
+    justify-content: space-between;
 }
-.linkNav2 {  
-     margin: 1.5rem;
-    padding: 2rem;
-    font-size: 1.5rem;
-    color: white;
-    background-size: cover;
-    text-decoration: none;
-    font-weight: 700;
-    background-image: url(../assets/Imagenes/Actualidad.jpg) ;}
-.linkNav3 { 
-       margin: 1.5rem;
-    padding: 2rem;
-    font-size: 1.5rem;
-    color:  white;
-    background-size: cover;
-    text-decoration: none;
-    font-weight: 700;
-    background-image: url(../assets/Imagenes/) 
-    ;}
-.linkNav4 {  
-      margin: 1.5rem;
-    padding: 2rem;
-    font-size: 1.5rem;
-    color: white;
-    background-size: cover;
-    text-decoration: none;
-    font-weight: 700;
-    background-image: url(../assets/Imagenes/Max-Ink.jpeg)
-    ;
-    filter: drop-shadow(10px 8px 8px  rgb(177, 23, 23))
+.Header__Nav__Div__Button__Div__Ul__Div__Li__Galeria__A {
+    color: black;
+    border-left:  black solid;
 }
-.linkNav5 {   
-     margin: 1.5rem;
-    padding: 2rem;
-    font-size: 1.5rem;
-    color:  white;
-    background-size: cover;
-    text-decoration: none;
-    font-weight: 700;
-    background-image: url(../assets/Imagenes/Cuidados\ 2.webp) ;}
+.Header__Nav__Div__Button__Div__Ul__Div__Li__Contacto__A {
+    color: black;
+    border-left:  black solid;
+}
+.Header__Nav__Div__Button__Div__Ul__Div__Li__SobreMaxInk__A{
+    color: black;
+    border-left:  black solid;
+}
+.Header__Nav__Div__Button__Div__Ul__Div__Li__Cuidados__A{
+    color: black;
+    border-left:  black solid;
+}
 
-.unoIndex {
-    display: inline-block;
+/*Index*/
+
+.Main__Section__1 {
+    height: 80vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
 }
-.tituloIndex {
+.Main__Section__1__h1 {
     font-size: 3rem;
     text-align: center;
-    top: 30px;
     color: white;
+    flex-wrap: wrap;
 }
-.descripcionIndex {
+.Main__Section__1__Div {
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content:space-evenly;
+flex-wrap:wrap
+}
+
+.Main__Section__1__Div__P {
     font-size: 1.5rem;
-    margin-top: 10%;
     text-align: center;
     width: 50%;
     color: white;
-    display: inline-block;
-    margin-right: 10%;
-    margin-left: 7%;
-    margin-bottom: 5%;
     background-color: rgba(0, 0, 0, 0.226);
+    border: solid black;
+    padding: 1%;
 }
-.tatuajeDeMessi { width: 25%;
-    display: inline-block;
-    margin-top: 10%;
-    }
-
-
-.subtituloIndex {
+.Main__Section__1__Div__img {
+    width: 25%;
+}
+.Main__Section__2 {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+   
+}
+.Main__Section__2__H2 {
     font-size: 3rem;
     text-align: center;
-    position: relative;
     top: 30px;
     color: white;
-    
 }
-.tatuajesFutbol {
+.Main__Section__2__Div {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.Main__Section__2__Div__img1 {
     width: 13%;
-    display: inline-block;
-    margin-left: 5%;
+ 
 }
-.queEsElTatuajeIndex {
+.Main__Section__2__Div__P {
     color: white;
     text-align: center;
-   margin: 0 auto;
     width: 50%;
     background-color: rgba(0, 0, 0, 0.226);
-    margin-left: 6%;
-    display: inline-block;
     font-size: 1.5rem;
+    border: solid black;
+    padding: 1%;
 }
 
-.tatuajeEnLaPierna{ width: 15%;
-    display: inline-block;
-    margin-left: 5%;
-
+.Main__Section__2__Div__img2{ 
+    width: 18%;
 }
-
 /* Galeria */
 /* Contacto */
 
+.Co__Main{
+    display: flex;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    justify-content: center;
+}
+
+.Co__Main__Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.Co__Main__Section__Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.Co__Main__Section__P{
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.226);
+    border: solid black;
+    padding: 1%;
+}
 /* Sobre Max-Ink */
+.SM__Main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+.SM__Main__H1{
+    color: white;
+}
+.SM__Main__Section1_H2 {
+    color:white;
+}
+.SM__Div__Section1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.SM__Main__Section1__P{
+font-size: 1.5rem;
+    text-align: center;
+    width: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.226);
+    border: solid black;
+    padding: 1%;
+}
+.SM__Main__Section2_H2 {
+    color:white;
+}
+.SM__Div__Section2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.SM__Main__Section2__P{
+font-size: 1.5rem;
+    text-align: center;
+    width: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.226);
+    border: solid black;
+    padding: 1%;
+}
+.SM__Main__Section3_H2 {
+    color:white;
+}
+.SM__Div__Section3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.SM__Main__Section3__P{
+font-size: 1.5rem;
+    text-align: center;
+    width: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.226);
+    border: solid black;
+    padding: 1%;
+}
 /* Cuidados */
+.Cu__Main{
+    height: 65vh;
+    text-align: center;
+}
+
+.Cu__Main__Section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.Cu__Main__Section__H1 {
+    color: white;
+}
+
+.Cu__Main__Section__Div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Cu__Main__Section__Div__img1{
+width: 20%;
+}
+.Cu__Main__Section__Div__P {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.226);
+    border: solid black;
+    padding: 1%;
+}
+.Cu__Main__Section__Div__img2{
+    width: 20%;
+}
 /* Footer */
 .iconoInstagram{
     color: rgb(224, 11, 136);
