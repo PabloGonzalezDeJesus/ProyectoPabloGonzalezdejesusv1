@@ -1,0 +1,65 @@
+.Header {
+    background-color: #6a6e74;
+
+    .Header__Nav__Div__Button__Div {
+        display: flex;
+
+        .Header__Nav__Div__Button__Div__Ul {
+            font-size: 1.5rem;
+            justify-content: space-between;
+
+            .Header__Nav__Div__Button__Div__Ul__Div__Li__Inicio__A {
+                color: black;
+                border-left: black solid;
+                animation: fade-in 0.6s ease-in-out;
+                &:hover {
+                    color: white;
+                    background-color: black;
+                    transition: 0.65s;
+                }
+            }
+
+            .Header__Nav__Div__Button__Div__Ul__Div__Li__Galeria__A {
+                @extend .Header__Nav__Div__Button__Div__Ul__Div__Li__Inicio__A;
+                
+
+                &:hover {
+                    color: white;
+                    background-color: black;
+                    transition: 0.65s;
+                    /* @extend .Header__Nav__Div__Button__Div__Ul__Div__Li__Inicio__A:hover; */
+                }
+            }
+
+            .Header__Nav__Div__Button__Div__Ul__Div__Li__Contacto__A {
+                @extend .Header__Nav__Div__Button__Div__Ul__Div__Li__Inicio__A;
+
+                &:hover {
+                    color: white;
+                    background-color: black;
+                    transition: 0.65s;
+                }
+            }
+
+            .Header__Nav__Div__Button__Div__Ul__Div__Li__SobreMaxInk__A {
+                @extend .Header__Nav__Div__Button__Div__Ul__Div__Li__Inicio__A;
+
+                &:hover {
+                    color: white;
+                    background-color: black;
+                    transition: 0.65s;
+                }
+            }
+
+            .Header__Nav__Div__Button__Div__Ul__Div__Li__Cuidados__A {
+                @extend .Header__Nav__Div__Button__Div__Ul__Div__Li__Inicio__A;
+
+                &:hover {
+                    color: white;
+                    background-color: black;
+                    transition: 0.65s;
+                }
+            }
+        }
+    }
+}

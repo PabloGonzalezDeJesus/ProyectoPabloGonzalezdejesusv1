@@ -1,0 +1,9 @@
+@mixin flexbox($justificacion,$alineacion,$direction,$espaciado,){
+    display:flex;
+    justify-content:$justificacion;
+    align-items: $alineacion;
+    flex-direction: $direction;
+    justify-content: $espaciado;
+}
+
+/* el mixin lo utilice para aplicar las medidas flexbox generales a los elementos */
