@@ -1,0 +1,534 @@
+/* La variable la use para aplicar el fondo en el scss de _fondo, el mapa lo utilice para aplicarselo a la mayoria de los parrafos */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes float {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
+main {
+  background-image: radial-gradient(circle, #141516, #27292b, #3c3f42, #53565a, #6a6e74, #6a6e74, #6a6e74, #6a6e74, #53565a, #3c3f42, #27292b, #141516);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* el mixin lo utilice para aplicar las medidas flexbox generales a los elementos */
+.Header {
+  background-color: #6a6e74;
+}
+.Header .Header__Nav__Div__Button__Div {
+  display: flex;
+}
+.Header .Header__Nav__Div__Button__Div .Header__Nav__Div__Button__Div__Ul {
+  font-size: 1.5rem;
+  justify-content: space-between;
+}
+.Header .Header__Nav__Div__Button__Div .Header__Nav__Div__Button__Div__Ul .Header__Nav__Div__Button__Div__Ul__Div__Li__Inicio__A, .Header .Header__Nav__Div__Button__Div .Header__Nav__Div__Button__Div__Ul .Header__Nav__Div__Button__Div__Ul__Div__Li__Cuidados__A, .Header .Header__Nav__Div__Button__Div .Header__Nav__Div__Button__Div__Ul .Header__Nav__Div__Button__Div__Ul__Div__Li__SobreMaxInk__A, .Header .Header__Nav__Div__Button__Div .Header__Nav__Div__Button__Div__Ul .Header__Nav__Div__Button__Div__Ul__Div__Li__Contacto__A, .Header .Header__Nav__Div__Button__Div .Header__Nav__Div__Button__Div__Ul .Header__Nav__Div__Button__Div__Ul__Div__Li__Galeria__A {
+  color: black;
+  border-left: black solid;
+  animation: fade-in 0.6s ease-in-out;
+}
+.Header .Header__Nav__Div__Button__Div .Header__Nav__Div__Button__Div__Ul .Header__Nav__Div__Button__Div__Ul__Div__Li__Inicio__A:hover, .Header .Header__Nav__Div__Button__Div .Header__Nav__Div__Button__Div__Ul .Header__Nav__Div__Button__Div__Ul__Div__Li__Cuidados__A:hover, .Header .Header__Nav__Div__Button__Div .Header__Nav__Div__Button__Div__Ul .Header__Nav__Div__Button__Div__Ul__Div__Li__SobreMaxInk__A:hover, .Header .Header__Nav__Div__Button__Div .Header__Nav__Div__Button__Div__Ul .Header__Nav__Div__Button__Div__Ul__Div__Li__Contacto__A:hover, .Header .Header__Nav__Div__Button__Div .Header__Nav__Div__Button__Div__Ul .Header__Nav__Div__Button__Div__Ul__Div__Li__Galeria__A:hover {
+  color: white;
+  background-color: black;
+  transition: 0.65s;
+}
+.Header .Header__Nav__Div__Button__Div .Header__Nav__Div__Button__Div__Ul .Header__Nav__Div__Button__Div__Ul__Div__Li__Galeria__A:hover {
+  color: white;
+  background-color: black;
+  transition: 0.65s;
+  /* @extend .Header__Nav__Div__Button__Div__Ul__Div__Li__Inicio__A:hover; */
+}
+.Header .Header__Nav__Div__Button__Div .Header__Nav__Div__Button__Div__Ul .Header__Nav__Div__Button__Div__Ul__Div__Li__Contacto__A:hover {
+  color: white;
+  background-color: black;
+  transition: 0.65s;
+}
+.Header .Header__Nav__Div__Button__Div .Header__Nav__Div__Button__Div__Ul .Header__Nav__Div__Button__Div__Ul__Div__Li__SobreMaxInk__A:hover {
+  color: white;
+  background-color: black;
+  transition: 0.65s;
+}
+.Header .Header__Nav__Div__Button__Div .Header__Nav__Div__Button__Div__Ul .Header__Nav__Div__Button__Div__Ul__Div__Li__Cuidados__A:hover {
+  color: white;
+  background-color: black;
+  transition: 0.65s;
+}
+
+.Footer {
+  /* .Footer__Div{
+     .Footer__Div__A{
+      .Footer__Div__A__Img{ 
+
+      }
+      .Footer__Div__A__Span{
+
+      }
+
+     }
+
+  } */
+}
+.Footer .Footer__Ul .Footer__Ul__Li1 .Footer__Ul__Li1__A .Footer__Ul__Li1__A__I {
+  color: rgb(224, 11, 136);
+  text-decoration: none;
+  animation: float 1s ease-in-out;
+  animation-iteration-count: infinite;
+}
+.Footer .Footer__Ul .Footer__Ul__Li2 .Footer__Ul__Li2__A .Footer__Ul__Li2__A__I {
+  color: black;
+  text-decoration: none;
+  animation: float 1s ease-in-out;
+  animation-iteration-count: infinite;
+}
+.Footer .Footer__Ul .Footer__Ul__Li3 .Footer__Ul__Li3__A .Footer__Ul__Li3__A__I {
+  color: blue;
+  text-decoration: none;
+  animation: float 1s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+  .Footer {
+    flex-wrap: nowrap;
+    width: 100%;
+    display: none;
+    /* .Footer__Ul{
+        width: 50%;
+        .Footer__Ul__Li1{
+            .Footer__Ul__Li1__A{
+                .Footer__Ul__Li1__A__I{
+
+                }
+            }
+
+        }
+        .Footer__Ul__Li2{
+            .Footer__Ul__Li2__A {
+                .Footer__Ul__Li2__A__I{
+
+                }
+            }
+        }
+        .Footer__Ul__Li3{
+            .Footer__Ul__Li3__A{
+                .Footer__Ul__Li3__A__I{
+
+
+
+                }
+            }
+
+        } */
+  }
+  .Footer .Footer__Div {
+    width: 50%;
+    flex-direction: column;
+  }
+  .Footer .Footer__Div .Footer__Div__A .Footer__Div__A__Img {
+    color: black;
+  }
+  .Footer .Footer__Div .Footer__Div__A .Footer__Div__A__Span {
+    color: black;
+  }
+}
+/* las clases sin usar las dejo porque creo que las voy a usar a futuro */
+/* Sinceramente no tengo idea de porque no se ven las redes en la pagina de contacto, estuve un buen rato buscando, creo que el error esta en el html, pero no lo encuentro. */
+.Main__Section__1 {
+  /* @include flexbox; */
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.Main__Section__1 .Main__Section__1__h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  flex-wrap: wrap;
+}
+.Main__Section__1 .Main__Section__1__Div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.Main__Section__1 .Main__Section__1__Div .Main__Section__1__Div__P {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.226);
+  border: solid black;
+  padding: 1%;
+}
+.Main__Section__1 .Main__Section__1__Div .Main__Section__1__Div__img {
+  width: 25%;
+}
+
+.Main__Section__2 {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.Main__Section__2 .Main__Section__2__H2 {
+  font-size: 3rem;
+  text-align: center;
+  top: 30px;
+  color: white;
+}
+.Main__Section__2 .Main__Section__2__Div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.Main__Section__2 .Main__Section__2__Div .Main__Section__2__Div__img1 {
+  width: 13%;
+}
+.Main__Section__2 .Main__Section__2__Div .Main__Section__2__Div__P {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.226);
+  border: solid black;
+  padding: 1%;
+}
+.Main__Section__2 .Main__Section__2__Div .Main__Section__2__Div__img2 {
+  width: 18%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  main .Main__Section__1 {
+    height: initial;
+  }
+  main .Main__Section__1 .Main__Section__1__Div {
+    flex-direction: column;
+    width: 100%;
+  }
+  main .Main__Section__1 .Main__Section__1__Div .Main__Section__1__Div__P {
+    width: 95%;
+  }
+  main .Main__Section__1 .Main__Section__1__Div .Main__Section__1__Div__img {
+    width: 95%;
+  }
+  main .Main__Section__2 {
+    height: initial;
+    flex-wrap: initial;
+    align-items: center;
+  }
+  main .Main__Section__2 .Main__Section__2__Div {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+  main .Main__Section__2 .Main__Section__2__Div .Main__Section__2__Div__img1 {
+    width: 100%;
+  }
+  main .Main__Section__2 .Main__Section__2__Div .Main__Section__2__Div__P {
+    width: 100%;
+  }
+  main .Main__Section__2 .Main__Section__2__Div .Main__Section__2__Div__img2 {
+    width: 100%;
+  }
+}
+.Ga__Ma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Ga__Ma .Ga__Ma__Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 30vh;
+}
+.Ga__Ma .Ga__Ma__Section .Ga__Ma__Section__h1 {
+  color: white;
+}
+.Ga__Ma .Ga__Ma__Section .Ga__Ma__Section__P {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.226);
+  border: solid black;
+  padding: 1%;
+}
+
+.Co__Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  height: 100vh;
+}
+.Co__Main .Co__Main__Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80vh;
+}
+.Co__Main .Co__Main__Section .Co__Main__Section__H1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Co__Main .Co__Main__Section .Co__Main__Section__P {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.226);
+  border: solid black;
+  padding: 1%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+  .Co__Main {
+    height: 120vh;
+  }
+}
+.SM__Main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 170vh;
+}
+.SM__Main .SM__Main__Div {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SM__Main .SM__Main__Div .SM__Main__Div__H1 {
+  color: white;
+}
+.SM__Main .SM__Main__Section1 {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.SM__Main .SM__Main__Section1 .SM__Main__Section1_H2 {
+  color: white;
+}
+.SM__Main .SM__Main__Section1 .SM__Div__Section1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.SM__Main .SM__Main__Section1 .SM__Div__Section1 .SM__Main__Section1__P {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.226);
+  border: solid black;
+  padding: 1%;
+}
+.SM__Main .SM__Main__Section2 {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.SM__Main .SM__Main__Section2 .SM__Main__Section2_H2 {
+  color: white;
+}
+.SM__Main .SM__Main__Section2 .SM__Div__Section2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.SM__Main .SM__Main__Section2 .SM__Div__Section2 .SM__Main__Section2__P {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.226);
+  border: solid black;
+  padding: 1%;
+  height: 30%;
+}
+.SM__Main .SM__Main__Section3 {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.SM__Main .SM__Main__Section3 .SM__Main__Section3_H2 {
+  color: white;
+}
+.SM__Main .SM__Main__Section3 .SM__Div__Section3 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.SM__Main .SM__Main__Section3 .SM__Div__Section3 .SM__Main__Section3__P {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.226);
+  border: solid black;
+  padding: 1%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+  .SM__Main .SM__Main__Section1 .SM__Div__Section1 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .SM__Main .SM__Main__Section1 .SM__Div__Section1 .SM__Main__Section1__P {
+    width: 90%;
+  }
+  .SM__Main .SM__Main__Section1 .SM__Div__Section1 .SM__Main__Section1_img {
+    width: 90%;
+  }
+  .SM__Main .SM__Main__Section2 .SM__Div__Section2 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .SM__Main .SM__Main__Section2 .SM__Div__Section2 .SM__Main__Section2__P {
+    width: 90%;
+  }
+  .SM__Main .SM__Main__Section2 .SM__Div__Section2 .SM__Main__Section2__img {
+    width: 90%;
+  }
+  .SM__Main .SM__Main__Section3 .SM__Div__Section3 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .SM__Main .SM__Main__Section3 .SM__Div__Section3 .SM__Main__Section3__P {
+    width: 90%;
+  }
+  .SM__Main .SM__Main__Section3 .SM__Div__Section3 .SM__Main__Section3__img {
+    width: 90%;
+  }
+}
+.Cu__Main {
+  height: 65vh;
+  text-align: center;
+}
+.Cu__Main .Cu__Main__Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.Cu__Main .Cu__Main__Section .Cu__Main__Section__H1 {
+  color: white;
+}
+.Cu__Main .Cu__Main__Section .Cu__Main__Section__Div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.Cu__Main .Cu__Main__Section .Cu__Main__Section__Div .Cu__Main__Section__Div__img1 {
+  width: 20%;
+  height: 80%;
+}
+.Cu__Main .Cu__Main__Section .Cu__Main__Section__Div .Cu__Main__Section__Div__P {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.226);
+  border: solid black;
+  padding: 1%;
+}
+.Cu__Main .Cu__Main__Section .Cu__Main__Section__Div .Cu__Main__Section__Div__img2 {
+  width: 20%;
+  height: 80%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+  .Cu__Main {
+    height: initial;
+  }
+  .Cu__Main .Cu__Main__Section .Cu__Main__Section__Div {
+    flex-direction: column;
+  }
+  .Cu__Main .Cu__Main__Section .Cu__Main__Section__Div .Cu__Main__Section__Div__img1 {
+    width: 90%;
+  }
+  .Cu__Main .Cu__Main__Section .Cu__Main__Section__Div .Cu__Main__Section__Div__P {
+    width: 90%;
+  }
+  .Cu__Main .Cu__Main__Section .Cu__Main__Section__Div .Cu__Main__Section__Div__img2 {
+    width: 90%;
+  }
+}
+.Er__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+.Er__main .Er__Main__Div {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.226);
+  border: solid black;
+  padding: 1%;
+  /* .Er__Main__Div__h1{
+
+  }
+  .Er__Main__Div__p{ 
+
+
+  } */
+}/*# sourceMappingURL=estilos.css.map */

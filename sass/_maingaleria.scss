@@ -1,0 +1,20 @@
+.Ga__Ma {
+    @include flexbox (center,center,column,space-evenly);
+    .Ga__Ma__Section{
+        @include flexbox (center,center,column,space-evenly);
+        height: 30vh;
+        .Ga__Ma__Section__h1{
+            color: white;
+
+        }
+        .Ga__Ma__Section__P{
+            font-size: map-get($map: $parrafos, $key:tamanofuentep );
+            text-align: map-get($map: $parrafos , $key: alineacion);
+            width: map-get($map: $parrafos , $key: ancho);
+            color: map-get($map: $parrafos , $key:color );
+            background-color: map-get($map: $parrafos , $key:colorfondo );
+            border: map-get($map: $parrafos , $key: borde );
+            padding: map-get($map: $parrafos , $key: padding);
+        }
+    }
+}

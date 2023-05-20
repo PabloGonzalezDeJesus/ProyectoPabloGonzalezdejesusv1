@@ -1,0 +1,12 @@
+$Fondo: radial-gradient(circle, #141516, #27292b, #3c3f42, #53565a, #6a6e74, #6a6e74, #6a6e74, #6a6e74, #53565a, #3c3f42, #27292b, #141516);
+$parrafos:(
+    tamanofuentep: 1.5rem,
+    alineacion: center,
+    ancho: 50%,
+    color: white,
+    colorfondo: rgba(0, 0, 0, 0.226),
+    borde: solid black,
+    padding: 1%
+);
+
+/* La variable la use para aplicar el fondo en el scss de _fondo, el mapa lo utilice para aplicarselo a la mayoria de los parrafos */

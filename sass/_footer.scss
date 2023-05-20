@@ -1,0 +1,108 @@
+.Footer{
+    /* .Footer__Div{
+       .Footer__Div__A{
+        .Footer__Div__A__Img{ 
+
+        }
+        .Footer__Div__A__Span{
+
+        }
+
+       }
+
+    } */
+    .Footer__Ul{
+        .Footer__Ul__Li1{
+            .Footer__Ul__Li1__A{
+                .Footer__Ul__Li1__A__I{
+                    color: rgb(224, 11, 136);
+        text-decoration: none;
+        animation: float 1s ease-in-out;
+        animation-iteration-count: infinite;
+                }
+            }
+
+        }
+        .Footer__Ul__Li2{
+            .Footer__Ul__Li2__A {
+                .Footer__Ul__Li2__A__I{
+                        color: black;
+                        text-decoration: none;
+                        animation: float 1s ease-in-out;
+                        animation-iteration-count: infinite;
+                }
+            }
+        }
+        .Footer__Ul__Li3{
+            .Footer__Ul__Li3__A{
+                .Footer__Ul__Li3__A__I{
+                    color: blue;
+                    text-decoration: none;
+                    animation: float 1s ease-in-out;
+                    animation-iteration-count: infinite;
+
+                }
+            }
+
+        }
+
+    }
+
+}
+@media screen and (min-width:0px) and (max-width: 1024px) {
+    .Footer{
+        flex-wrap: nowrap;
+        width: 100%;
+        display: none;
+        .Footer__Div{
+            width: 50%;
+            flex-direction: column;
+           .Footer__Div__A{
+            
+            .Footer__Div__A__Img{ 
+                color: black;
+                
+
+            }
+            .Footer__Div__A__Span{
+                color: black;
+
+            }
+
+           }
+
+        }
+        /* .Footer__Ul{
+            width: 50%;
+            .Footer__Ul__Li1{
+                .Footer__Ul__Li1__A{
+                    .Footer__Ul__Li1__A__I{
+
+                    }
+                }
+
+            }
+            .Footer__Ul__Li2{
+                .Footer__Ul__Li2__A {
+                    .Footer__Ul__Li2__A__I{
+
+                    }
+                }
+            }
+            .Footer__Ul__Li3{
+                .Footer__Ul__Li3__A{
+                    .Footer__Ul__Li3__A__I{
+
+                    
+
+                    }
+                }
+
+            } */
+
+        }
+
+    }
+
+    /* las clases sin usar las dejo porque creo que las voy a usar a futuro */
+    /* Sinceramente no tengo idea de porque no se ven las redes en la pagina de contacto, estuve un buen rato buscando, creo que el error esta en el html, pero no lo encuentro. */

@@ -1,0 +1,58 @@
+.Cu__Main {
+    height: 65vh;
+    text-align: center;
+
+    .Cu__Main__Section {
+        @include flexbox (center,center,column,space-evenly);
+        height: 100%;
+
+        .Cu__Main__Section__H1 {
+            color: white;
+        }
+
+        .Cu__Main__Section__Div {
+            @include flexbox (center,center,row,space-evenly);
+            flex-wrap: wrap;
+
+            .Cu__Main__Section__Div__img1 {
+                width: 20%;
+                height: 80%;
+            }
+
+            .Cu__Main__Section__Div__P {
+                font-size: map-get($map: $parrafos, $key:tamanofuentep );
+            text-align: map-get($map: $parrafos , $key: alineacion);
+            width: map-get($map: $parrafos , $key: ancho);
+            color: map-get($map: $parrafos , $key:color );
+            background-color: map-get($map: $parrafos , $key:colorfondo );
+            border: map-get($map: $parrafos , $key: borde );
+            padding: map-get($map: $parrafos , $key: padding);
+            }
+            .Cu__Main__Section__Div__img2 {
+                width: 20%;
+                height: 80%
+            }
+        }
+    }
+}
+@media screen and (min-width:0px) and (max-width: 1024px) {
+    .Cu__Main {
+        height: initial;
+ 
+        .Cu__Main__Section {
+            .Cu__Main__Section__Div {
+                flex-direction: column;
+                .Cu__Main__Section__Div__img1 {
+                    width: 90%;
+                }
+    
+                .Cu__Main__Section__Div__P {
+                    width: 90%;
+                }
+                .Cu__Main__Section__Div__img2 {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

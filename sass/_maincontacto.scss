@@ -1,0 +1,29 @@
+.Co__Main {
+    @include flexbox (center,center,row,space-around);
+    color: white;
+    height: 100vh;
+    .Co__Main__Section {
+        @include flexbox (center,center,column,space-evenly);
+        height: 80vh;
+        
+
+        .Co__Main__Section__H1{
+            @include flexbox (center,center,column,space-between);
+        }
+
+        .Co__Main__Section__P {
+            font-size: 1.5rem;
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.226);
+            border: solid black;
+            padding: 1%;
+        }
+    }
+}
+@media screen and (min-width:0px) and (max-width: 1024px) {
+    .Co__Main {
+        height: 120vh;
+        
+    }
+}
