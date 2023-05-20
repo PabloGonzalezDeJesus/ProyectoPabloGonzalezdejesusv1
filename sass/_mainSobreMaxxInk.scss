@@ -2,12 +2,25 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: space-between;
-    .SM__Main__H1 {
-        color: white;
+    height: 170vh;
+
+    .SM__Main__Div {
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .SM__Main__Div__H1 {
+            color: white;
+        }
+
     }
-    .SM__Main__Section1{
-            
+
+    .SM__Main__Section1 {
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
         .SM__Main__Section1_H2 {
             color: white;
         }
@@ -18,20 +31,28 @@
             flex-wrap: wrap;
 
             .SM__Main__Section1__P {
-                font-size: map-get($map: $parrafos, $key:tamanofuentep );
-            text-align: map-get($map: $parrafos , $key: alineacion);
-            width: map-get($map: $parrafos , $key: ancho);
-            color: map-get($map: $parrafos , $key:color );
-            background-color: map-get($map: $parrafos , $key:colorfondo );
-            border: map-get($map: $parrafos , $key: borde );
-            padding: map-get($map: $parrafos , $key: padding);
+                font-size: map-get($map: $parrafos, $key: tamanofuentep);
+                text-align: map-get($map: $parrafos , $key: alineacion);
+                width: map-get($map: $parrafos , $key: ancho);
+                color: map-get($map: $parrafos , $key: color);
+                background-color: map-get($map: $parrafos , $key: colorfondo);
+                border: map-get($map: $parrafos , $key: borde);
+                padding: map-get($map: $parrafos , $key: padding);
             }
         }
     }
-    .SM__Main__Section2{
+
+    .SM__Main__Section2 {
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         .SM__Main__Section2_H2 {
+
             color: white;
+
         }
+
         .SM__Div__Section2 {
             display: flex;
             justify-content: space-evenly;
@@ -39,74 +60,91 @@
             align-items: center;
 
             .SM__Main__Section2__P {
-                font-size: map-get($map: $parrafos, $key:tamanofuentep );
-            text-align: map-get($map: $parrafos , $key: alineacion);
-            width: map-get($map: $parrafos , $key: ancho);
-            color: map-get($map: $parrafos , $key:color );
-            background-color: map-get($map: $parrafos , $key:colorfondo );
-            border: map-get($map: $parrafos , $key: borde );
-            padding: map-get($map: $parrafos , $key: padding);
-            height: 30%;
+                font-size: map-get($map: $parrafos, $key: tamanofuentep);
+                text-align: map-get($map: $parrafos , $key: alineacion);
+                width: map-get($map: $parrafos , $key: ancho);
+                color: map-get($map: $parrafos , $key: color);
+                background-color: map-get($map: $parrafos , $key: colorfondo);
+                border: map-get($map: $parrafos , $key: borde);
+                padding: map-get($map: $parrafos , $key: padding);
+                height: 30%;
             }
         }
     }
-    .SM__Main__Section3{
+
+    .SM__Main__Section3 {
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         .SM__Main__Section3_H2 {
             color: white;
+
         }
+
         .SM__Div__Section3 {
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
+
             .SM__Main__Section3__P {
-                font-size: map-get($map: $parrafos, $key:tamanofuentep );
-            text-align: map-get($map: $parrafos , $key: alineacion);
-            width: map-get($map: $parrafos , $key: ancho);
-            color: map-get($map: $parrafos , $key:color );
-            background-color: map-get($map: $parrafos , $key:colorfondo );
-            border: map-get($map: $parrafos , $key: borde );
-            padding: map-get($map: $parrafos , $key: padding);
+                font-size: map-get($map: $parrafos, $key: tamanofuentep);
+                text-align: map-get($map: $parrafos , $key: alineacion);
+                width: map-get($map: $parrafos , $key: ancho);
+                color: map-get($map: $parrafos , $key: color);
+                background-color: map-get($map: $parrafos , $key: colorfondo);
+                border: map-get($map: $parrafos , $key: borde);
+                padding: map-get($map: $parrafos , $key: padding);
             }
         }
     }
+
 }
+
 @media screen and (min-width:0px) and (max-width: 1024px) {
     .SM__Main {
-        .SM__Main__Section1{   
+        .SM__Main__Section1 {
             .SM__Div__Section1 {
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
-    
+
                 .SM__Main__Section1__P {
                     width: 90%;
                 }
+
                 .SM__Main__Section1_img {
                     width: 90%;
                 }
             }
         }
-        .SM__Main__Section2{
+
+        .SM__Main__Section2 {
             .SM__Div__Section2 {
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
+
                 .SM__Main__Section2__P {
                     width: 90%;
                 }
+
                 .SM__Main__Section2__img {
                     width: 90%;
                 }
             }
         }
-        .SM__Main__Section3{
+
+        .SM__Main__Section3 {
             .SM__Div__Section3 {
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
+
                 .SM__Main__Section3__P {
                     width: 90%;
                 }
+
                 .SM__Main__Section3__img {
                     width: 90%;
                 }

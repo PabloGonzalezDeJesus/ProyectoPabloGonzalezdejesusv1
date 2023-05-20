@@ -1,3 +1,4 @@
+/* La variable la use para aplicar el fondo en el scss de _fondo, el mapa lo utilice para aplicarselo a la mayoria de los parrafos */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,700&display=swap");
 * {
   margin: 0;
@@ -6,7 +7,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-/* La variable la use para aplicar el fondo en el scss de _fondo, el mapa lo utilice para aplicarselo a la mayoria de los parrafos */
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -334,10 +334,22 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: space-between;
+  height: 170vh;
 }
-.SM__Main .SM__Main__H1 {
+.SM__Main .SM__Main__Div {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SM__Main .SM__Main__Div .SM__Main__Div__H1 {
   color: white;
+}
+.SM__Main .SM__Main__Section1 {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .SM__Main .SM__Main__Section1 .SM__Main__Section1_H2 {
   color: white;
@@ -355,6 +367,12 @@ main {
   background-color: rgba(0, 0, 0, 0.226);
   border: solid black;
   padding: 1%;
+}
+.SM__Main .SM__Main__Section2 {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .SM__Main .SM__Main__Section2 .SM__Main__Section2_H2 {
   color: white;
@@ -374,6 +392,12 @@ main {
   border: solid black;
   padding: 1%;
   height: 30%;
+}
+.SM__Main .SM__Main__Section3 {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .SM__Main .SM__Main__Section3 .SM__Main__Section3_H2 {
   color: white;
@@ -486,4 +510,25 @@ main {
     width: 90%;
   }
 }
-/*  *//*# sourceMappingURL=estilos.css.map */
+.Er__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+.Er__main .Er__Main__Div {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.226);
+  border: solid black;
+  padding: 1%;
+  /* .Er__Main__Div__h1{
+
+  }
+  .Er__Main__Div__p{ 
+
+
+  } */
+}/*# sourceMappingURL=estilos.css.map */
